@@ -453,3 +453,21 @@ a {
     margin: 0 10px;
     border-radius: 10px;
 }
+
+
+#faq_content{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background-color: white;
+    margin-bottom: -100px;
+}
+.questions_blocks {
+    width: 70%;
+    height:  auto;
+    margin: 50px auto;
+    border-radius: 10px;
+    outline: 2px solid #adadad;
+
+}
