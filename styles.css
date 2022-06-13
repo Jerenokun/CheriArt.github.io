@@ -8,8 +8,8 @@ body {
 } */
 textarea,
 input {
-    border-radius: 5px;
     border: 2px solid #858585;
+    border-radius: 5px;
     transition: background-color 0.5s;
 }
 input[type="submit"]:active,
@@ -36,7 +36,6 @@ textarea {
     text-align: right;
     vertical-align: center;
     background-color: red;
-    z-index: 1;
     background-image: linear-gradient(
         to right,
         #ff7f44 30%,
@@ -44,19 +43,20 @@ textarea {
         #90be6d,
         #b8cfc8
     );
+    z-index: 1;
 }
 .navbar {
     display: inline;
     position: fixed;
     width: 100%;
     height: 53px;
-    /* box-shadow: 0 1px 10px rgb(187, 187, 187); */
     padding: 0 20px 0 0;
     font-size: 16px;
     font-family: Verdana;
     text-align: right;
     vertical-align: center;
     background-color: white;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.137);
     z-index: 2;
 }
 .navbar ul,
@@ -82,29 +82,28 @@ textarea {
 li {
     margin: -5px -3px;
 }
+
 .navbar_links {
     margin: 0;
     padding: 17px 20px;
     line-height: 30px;
-    transition: background-color 0.6s, color 0.5s;
+    transition: background-color 0.6s, color 0.5s, box-shadow 0.5s;
 }
-
 #navbar_logo {
-    position: absolute;
     float: left;
     top: 0;
     width: 120px;
     height: 56px;
     margin: 0;
     padding: 17.5px 0;
-    box-sizing: border-box;
     text-align: center;
     background-image: linear-gradient(to right, #f94144, #ff7f44);
+    box-sizing: border-box;
 }
 #navbar_logo a {
-    color: white;
     font-family: Quicksand;
     font-weight: 550;
+    color: white;
 }
 #navbar_home {
     color: #f3722c;
@@ -166,10 +165,10 @@ li {
     display: block;
 }
 #navbar_signup {
-    border-radius: 10px 10px 10px 10px;
     padding: 11px;
     vertical-align: middle;
     color: #ffd7ff;
+    border-radius: 10px 10px 10px 10px;
     background-image: linear-gradient(to right, #577590, #765790);
 }
 #navbar_signup:hover {
@@ -190,43 +189,45 @@ a {
     font-size: 14px;
     font-family: Verdana;
     text-align: left;
-    background-color: white;
     border: 2px solid #cccccc;
+    background-color: white;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.137);
 }
 .heading {
     font-size: 46px;
     font-family: Quicksand;
 }
 .heading:not(#welcoming_heading) {
-    width: 100%;
+    width: auto;
+    padding: 10px 20px;
+    margin: 0;
     font-size: 30px;
     font-family: Quicksand;
     border-radius: 10px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin: 0;
-    color: white;
-    width: auto;
     line-height: 50px;
+    color: white;
     background-image: linear-gradient(to right, #f94144, #ff7f44);
+    box-sizing: border-box;
+
 }
 .subheading {
     font-size: 30px;
+    font-weight: 400;
     font-family: Quicksand;
 }
 .artists_subheading {
+    width: 100%;
     font-size: 30px;
     font-family: Quicksand;
-    width: 100%;
     text-align: center;
 }
 .content_area {
     padding: 15px 15px 15px 15px;
-    vertical-align: center;
     font-size: 14px;
     font-family: Verdana;
-    color: black;
     font-weight: 500;
+    vertical-align: center;
+    color: black;
 }
 .content_area table {
     padding: 15px 30px;
@@ -249,12 +250,13 @@ a {
 .event_info {
     width: 45%;
     margin-left: 3.5%;
-    border-radius: 10px;
     font-size: 14px;
     font-family: Verdana;
     background-color: white;
     outline: 2px solid #cccccc;
-    vertical-align: text-top;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.137);
+    vertical-align: top;
 }
 #event_info_wrapper {
     width: 100%;
@@ -266,9 +268,9 @@ a {
     margin: 100px auto 0;
     padding: 15px 0 20px 0;
     bottom: 0;
-    text-align: center;
     font-size: 13px;
     font-family: Verdana;
+    text-align: center;
     color: white;
     background-color: rgb(148, 148, 148);
 }
@@ -276,21 +278,31 @@ a {
     width: 30px;
     height: 30px;
 }
-#signupcontent_area {
-    text-align: center;
-    top: 100px;
+/* #signupcontent_area {
     width: 500px;
     height: 500px;
+    top: 100px;
     margin: 50px auto;
-    border-radius: 15px;
-    border: 2px solid #cccccc;
+    text-align: center;
+    outline: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.137);
     background-color: white;
-}
+} */
+/* #################################### PRICING STYLES #################################### */
 #thankyou_image {
     display: block;
     top: 0;
     width: 100%;
     height: auto;
+    padding: 100px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: Quicksand;
+    text-align: center;
+    color: white;
+    background-size: cover;
     background-image: linear-gradient(
             to top,
             rgba(0, 0, 0, 0.753),
@@ -300,15 +312,7 @@ a {
             rgba(0, 0, 0, 0.753)
         ),
         url("background_image[pricing].webp");
-    text-align: center;
-    color: white;
-    font-size: 50px;
-    font-weight: 600;
-    padding: 100px;
-    padding-bottom: 50px;
     box-sizing: border-box;
-    background-size: cover;
-    font-family: Quicksand;
     z-index: -1;
 }
 #wholepricing_content {
@@ -317,11 +321,11 @@ a {
     box-sizing: content-box;
 }
 #thankyou_message_outer {
+    top: 200px;
     width: 100%;
     height: auto;
-    top: 200px;
-    padding: 100px auto;
     margin: 20px auto 50px auto;
+    padding: 100px auto;
     box-sizing: content-box;
     text-align: left;
 }
@@ -330,66 +334,38 @@ a {
     width: 80%;
     height: auto;
     margin: 0 auto;
-    border-radius: 10px;
     font-size: 14px;
     font-family: Verdana;
     background-color: white;
-    outline: 2px solid #adadad;
+    border-radius: 10px;
+    outline: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.137);
     box-sizing: content-box;
 }
-
-#pricing_artworks,
-#pricing_artlessons {
-    width: 100%;
-    padding: 50px;
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.753),
-            rgba(0, 0, 0, 0.349),
-            rgba(255, 255, 255, 0),
-            rgba(0, 0, 0, 0.349),
-            rgba(0, 0, 0, 0.753)
-        ),
-        url("background_image[artworks].jpg");
-    background-size: cover;
-    box-sizing: border-box;
+.artworks_artlessons_content{
+    width: 60%;
+    font-size: 15px;
+    text-align: justify;
 }
-#pricing_artlessons {
-    background-image: linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.753),
-            rgba(0, 0, 0, 0.349),
-            rgba(255, 255, 255, 0),
-            rgba(0, 0, 0, 0.349),
-            rgba(0, 0, 0, 0.753)
-        ),
-        url("background_image[art\ lessons].jpg");
-    background-size: cover;
-    margin-bottom: -100px;
-}
-
 .pricing_content {
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: auto;
     border-radius: 10px;
     font-size: 14px;
     font-family: Verdana;
     background-color: white;
-    outline: 2px solid #adadad;
+    outline: 2px solid #cccccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.137);
     box-sizing: border-box;
 }
-
-#artists_page {
-    background-image: radial-gradient(
-            rgba(255, 255, 255, 0),
-            rgba(0, 0, 0, 0.349),
-            rgba(0, 0, 0, 0.753)
-        ),
-        url("background_image[artists].jpg");
-    background-size: 100% auto;
-    background-repeat: repeat-y;
+.content_area div{
+    display: inline-block;
 }
+
+/* #################################### ARTISTS STYLES #################################### */
 #artists_welcoming_message {
     width: 100%;
     height: 350px;
@@ -398,8 +374,8 @@ a {
     font-size: 14px;
     font-family: Verdana;
     text-align: left;
-    background-color: white;
     border: 2px solid #cccccc;
+    background-color: white;
 }
 #artists_image {
     width: 90%;
@@ -413,32 +389,34 @@ a {
     width: 70%;
     height: auto;
     margin: 60px auto;
-    border-radius: 10px;
     font-size: 14px;
     font-family: Verdana;
-    background-color: white;
     outline: 2px solid #adadad;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.137);
     box-sizing: border-box;
 }
 .artists_image {
     position: absolute;
-    margin: -30px 20px;
     width: 130px;
     height: 130px;
+    margin: -30px 20px;
     border-radius: 50%;
-    border: 2px solid #ffdba5;
     background-size: cover;
+    border: 2px solid #ffa600;
 }
 .artists_heading {
     margin: 0;
     padding: 10px 20px 10px 170px;
-    box-sizing: border-box;
-    border-radius: 10px;
     line-height: 50px;
     font-size: 30px;
     font-family: Quicksand;
-    background-image: linear-gradient(to right, #f94144, #ff7f44);
     color: white;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #f94144, #ff7f44);
+    box-sizing: border-box;
+
 }
 .artists_artworks {
     width: 100%;
@@ -448,26 +426,26 @@ a {
 }
 .artists_artworks img {
     display: inline-block;
-    vertical-align: middle;
     width: 200px;
     margin: 0 10px;
+    vertical-align: middle;
     border-radius: 10px;
 }
 
-
-#faq_content{
+/* #################################### FAQ STYLES #################################### */
+#faq_content {
     width: 100%;
     height: auto;
+    margin-bottom: -100px;
     padding: 100px 0;
     text-align: center;
-    background-color: white;
-    margin-bottom: -100px;
 }
 .questions_blocks {
     width: 70%;
-    height:  auto;
+    height: auto;
     margin: 50px auto;
-    border-radius: 10px;
     outline: 2px solid #adadad;
-
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.137);
 }
